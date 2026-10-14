@@ -1,0 +1,196 @@
+{
+  "configs": [
+    "multi_datasets_scratch_24k.json",
+    "multi_datasets_phase3_5mix.json"
+  ],
+  "sources": [
+    {
+      "id": "scenenet_rgbd",
+      "kind": "synthetic",
+      "episodes": 4355,
+      "indexedFrames": 261300,
+      "fps": 1,
+      "indexedHours": 72.58333333333333,
+      "hours": 72.58333333333333,
+      "indexSha256": "4b255197c34b846732f53418b1fe14ff55f183b1aedb7ca9f6c4d6a35b81effb",
+      "missingAllowlistedEpisodes": [],
+      "label": "SceneNet RGB-D"
+    },
+    {
+      "id": "aria_se",
+      "kind": "synthetic",
+      "episodes": 31548,
+      "indexedFrames": 1920006,
+      "fps": 10,
+      "indexedHours": 53.3335,
+      "hours": 53.3335,
+      "indexSha256": "63eec8c487cebc4b449408ec695c31b454b20ed556be236968a30ed5481ea173",
+      "missingAllowlistedEpisodes": [],
+      "label": "Aria Synthetic Environments"
+    },
+    {
+      "id": "egoxperience",
+      "kind": "real",
+      "episodes": 26,
+      "indexedFrames": 47104,
+      "fps": 20,
+      "indexedHours": 0.6542222222222221,
+      "hours": 50,
+      "indexSha256": "fd0bcf8cafaf58227ffb5218c995554d8e03f0a2f7b1b56c1fc9a45cee6790c3",
+      "missingAllowlistedEpisodes": [],
+      "label": "EgoX-Data-6M"
+    },
+    {
+      "id": "ace_data0",
+      "kind": "real",
+      "episodes": 43591,
+      "indexedFrames": 2762719,
+      "fps": 20,
+      "indexedHours": 38.371097222222225,
+      "hours": 38.371097222222225,
+      "indexSha256": "d2bfff663fe5f2e5b128344c78485cbb76791ed12476d2135569d8e4d664ce4f",
+      "missingAllowlistedEpisodes": [],
+      "label": "ACE-Data-0"
+    },
+    {
+      "id": "xperience",
+      "kind": "real",
+      "episodes": 46257,
+      "indexedFrames": 2717474,
+      "fps": 20,
+      "indexedHours": 37.742694444444446,
+      "hours": 37.742694444444446,
+      "indexSha256": "436333497a8f14f931b58588dd47ef684b259f09f532781d76eaa6b2d1d87332",
+      "missingAllowlistedEpisodes": [],
+      "label": "Xperience-10M"
+    },
+    {
+      "id": "agibot",
+      "kind": "real",
+      "episodes": 13215,
+      "indexedFrames": 797576,
+      "fps": 30,
+      "indexedHours": 7.3849629629629625,
+      "hours": 7.3849629629629625,
+      "indexSha256": "dbf84a594b765a9f8d7098abe3af2651f83f3b912bcbcf69fa7cece1d835549b",
+      "missingAllowlistedEpisodes": [],
+      "label": "AgiBot World 2026"
+    },
+    {
+      "id": "behavior1k",
+      "kind": "synthetic",
+      "episodes": 11797,
+      "indexedFrames": 752741,
+      "fps": 30,
+      "indexedHours": 6.969824074074074,
+      "hours": 6.969824074074074,
+      "indexSha256": "e3d0e3c8e013be9c2a154451ccb153164827fefdd73a7ae47072c409458dbb40",
+      "missingAllowlistedEpisodes": [],
+      "label": "BEHAVIOR-1K"
+    },
+    {
+      "id": "dexycb",
+      "kind": "real",
+      "episodes": 7995,
+      "indexedFrames": 581608,
+      "fps": 30,
+      "indexedHours": 5.38525925925926,
+      "hours": 5.38525925925926,
+      "indexSha256": "17c9346eeb6ca5062725daa72b5659175a5ca3351d9d837c4d1e386a82ec356f",
+      "missingAllowlistedEpisodes": [],
+      "label": "DexYCB"
+    },
+    {
+      "id": "hocap",
+      "kind": "real",
+      "episodes": 507,
+      "indexedFrames": 576607,
+      "fps": 30,
+      "indexedHours": 5.338953703703703,
+      "hours": 5.338953703703703,
+      "indexSha256": "92d964f3fe9966b219fd8bf58c708fe457372b05ede0b6c68f21b24b94ca5c8f",
+      "missingAllowlistedEpisodes": [],
+      "label": "HO-Cap"
+    },
+    {
+      "id": "hot3d",
+      "kind": "real",
+      "episodes": 131,
+      "indexedFrames": 428351,
+      "fps": 30,
+      "indexedHours": 3.966212962962963,
+      "hours": 3.966212962962963,
+      "indexSha256": "c31819be6624df0958b395c23c38cd659f22b1dd9bc2feb891e579fdaf2b0c2f",
+      "missingAllowlistedEpisodes": [],
+      "label": "HOT3D"
+    },
+    {
+      "id": "hoi4d",
+      "kind": "real",
+      "episodes": 348,
+      "indexedFrames": 91674,
+      "fps": 15,
+      "indexedHours": 1.6976666666666667,
+      "hours": 1.6976666666666667,
+      "indexSha256": "de63cdf7e45f911e2e88b309950b881781d1ec31d5700aef7c507b8ecf042220",
+      "missingAllowlistedEpisodes": [
+        "ZY20210800001_H1_C12_N29_S200_s01_T2"
+      ],
+      "label": "HOI4D"
+    },
+    {
+      "id": "h2o",
+      "kind": "real",
+      "episodes": 103,
+      "indexedFrames": 60456,
+      "fps": 30,
+      "indexedHours": 0.5597777777777778,
+      "hours": 0.5597777777777778,
+      "indexSha256": "fb27a35e9ed8f911324ff11f96a64f78706f89ce7833208bec92bfbcc7b56994",
+      "missingAllowlistedEpisodes": [],
+      "label": "H2O"
+    },
+    {
+      "id": "h2o3d",
+      "kind": "real",
+      "episodes": 64,
+      "indexedFrames": 57707,
+      "fps": 30,
+      "indexedHours": 0.534324074074074,
+      "hours": 0.534324074074074,
+      "indexSha256": "affc5e8054676bf391fc1e489dc4760484370b3a5a931f9649e805ffe22ebe06",
+      "missingAllowlistedEpisodes": [],
+      "label": "H2O-3D"
+    },
+    {
+      "id": "golden",
+      "kind": "real",
+      "episodes": 4,
+      "indexedFrames": 18276,
+      "fps": 20,
+      "indexedHours": 0.2538333333333333,
+      "hours": 0.2538333333333333,
+      "indexSha256": "5c270685adbd42cadd2563532ec100f7c8f8388d1255a949854d823d4278a7c6",
+      "missingAllowlistedEpisodes": [],
+      "label": "Golden"
+    },
+    {
+      "id": "dynamic_replica",
+      "kind": "synthetic",
+      "episodes": 310,
+      "indexedFrames": 18600,
+      "fps": 30,
+      "indexedHours": 0.17222222222222222,
+      "hours": 0.17222222222222222,
+      "indexSha256": "b56e6f51dcf0e052c2f42515f9469d3b437bb485590e927537743ed1c851e277",
+      "missingAllowlistedEpisodes": [],
+      "label": "Dynamic Replica"
+    }
+  ],
+  "realHours": 151.23478240740747,
+  "syntheticHours": 133.05887962962962,
+  "totalHours": 284.29366203703705,
+  "realPercent": 53.19667745097497,
+  "displayHours": 280,
+  "method": "Union of scratch_24k and phase3_5mix configured sources, deduplicated by source. Available indexed frames divided by configured FPS and 3600; local allowlists applied. EgoX-Data-6M overridden to complete 50-hour release per user instruction, not the historical training subset. This is an approximate data-pool overview, not measured optimizer exposure or sampling weights. Total rounded to nearest ten hours for display. One HOI4D allowlisted episode is absent from the index and not estimated."
+}

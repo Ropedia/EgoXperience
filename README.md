@@ -45,6 +45,14 @@ predicted relative SE(3), without future reference poses. Browser geometry is
 subsampled for performance; source vertex colors are retained.
 Captions are data annotations, not model outputs.
 
+The training-data panel summarizes the union of the scratch and phase-3 source
+configurations. EgoX-Data-6M counts as the complete 50-hour release, not the small
+historical subset. Other source durations are estimated from available indexed
+frames and configured FPS; this is not optimizer sampling exposure. The computed
+284.3-hour pool is displayed as approximately 280 hours, with real/simulated
+shares calculated from unrounded durations. `assets-v2/training-data-summary.json`
+records per-source counts, estimates, index hashes, and known index omissions.
+
 ## Validate and publish
 
 ```sh

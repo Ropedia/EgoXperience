@@ -5,6 +5,7 @@ from pathlib import Path
 def runtime_files(root):
     root = Path(root).resolve()
     assets = root / 'assets-v2'
+    # Public provenance for the training-composition panel.
     files = {Path(n) for n in ['index.html', 'v2.css', 'v2.js', 'data-player.js', 'sequence-viewer.js', 'metrics.js', '.nojekyll']}
     for directory in ['vendor', 'assets-v2/fonts']:
         files.update(p.relative_to(root) for p in (root / directory).rglob('*') if p.is_file())
@@ -32,6 +33,7 @@ def runtime_files(root):
                         files.add((root / base / scene[key]).resolve().relative_to(root))
                 manifest = json.loads((root / base / 'stream.json').read_text())
                 files.update(base / c['file'] for c in manifest['chunks'])
+    files.add(Path('assets-v2/training-data-summary.json'))
     return files
 
 if __name__ == '__main__':
