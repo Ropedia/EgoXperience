@@ -163,18 +163,6 @@
       "label": "H2O-3D"
     },
     {
-      "id": "golden",
-      "kind": "real",
-      "episodes": 4,
-      "indexedFrames": 18276,
-      "fps": 20,
-      "indexedHours": 0.2538333333333333,
-      "hours": 0.2538333333333333,
-      "indexSha256": "5c270685adbd42cadd2563532ec100f7c8f8388d1255a949854d823d4278a7c6",
-      "missingAllowlistedEpisodes": [],
-      "label": "Golden"
-    },
-    {
       "id": "dynamic_replica",
       "kind": "synthetic",
       "episodes": 310,
@@ -187,10 +175,10 @@
       "label": "Dynamic Replica"
     }
   ],
-  "realHours": 151.23478240740747,
+  "realHours": 150.98094907407412,
   "syntheticHours": 133.05887962962962,
-  "totalHours": 284.29366203703705,
-  "realPercent": 53.19667745097497,
+  "totalHours": 284.03982870370373,
+  "realPercent": 53.154851473864944,
   "displayHours": 280,
-  "method": "Union of scratch_24k and phase3_5mix configured sources, deduplicated by source. Available indexed frames divided by configured FPS and 3600; local allowlists applied. EgoX-Data-6M overridden to complete 50-hour release per user instruction, not the historical training subset. This is an approximate data-pool overview, not measured optimizer exposure or sampling weights. Total rounded to nearest ten hours for display. One HOI4D allowlisted episode is absent from the index and not estimated."
+  "method": "Union of scratch_24k and phase3_5mix configured sources, deduplicated by source. Available indexed frames divided by configured FPS and 3600; local allowlists applied. EgoX-Data-6M overridden to complete 50-hour release per user instruction, not the historical training subset. This is an approximate data-pool overview, not measured optimizer exposure or sampling weights. Total rounded to nearest ten hours for display. One HOI4D allowlisted episode is absent from the index and not estimated. Golden is excluded from the displayed pool per user request."
 }
