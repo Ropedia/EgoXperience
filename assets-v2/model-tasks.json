@@ -1,0 +1,78 @@
+[
+  {
+    "id": "workspace",
+    "dataset": "EgoX-Data-6M",
+    "episode": "egoxperience_B092_0c6791d400",
+    "trainingVerified": true
+  },
+  {
+    "id": "hot3d-01",
+    "dataset": "HOT3D",
+    "episode": "hot3d_ep000305",
+    "trainingVerified": true
+  },
+  {
+    "id": "hoi4d-contact-06-34000",
+    "dataset": "HOI4D",
+    "episode": "ZY20210800002_H2_C1_N12_S339_s01_T2",
+    "checkpoint": 34000,
+    "trainingVerified": true
+  },
+  {
+    "id": "h2o-01",
+    "dataset": "H2O",
+    "episode": "subject2_o1_take01",
+    "trainingVerified": true
+  },
+  {
+    "id": "task11",
+    "dataset": "EgoX-Data-6M",
+    "episode": "egoxperience_B138_323cf9dd",
+    "trainingVerified": true
+  },
+  {
+    "id": "hot3d-02",
+    "dataset": "HOT3D",
+    "episode": "hot3d_ep000301",
+    "trainingVerified": true
+  },
+  {
+    "id": "hoi4d-contact-03-30500",
+    "dataset": "HOI4D",
+    "episode": "ZY20210800002_H2_C1_N03_S336_s02_T1",
+    "checkpoint": 30500,
+    "trainingVerified": true
+  },
+  {
+    "id": "h2o-02",
+    "dataset": "H2O",
+    "episode": "subject2_o1_take04",
+    "trainingVerified": true
+  },
+  {
+    "id": "egox-contact-task07-34000",
+    "dataset": "EgoX-Data-6M",
+    "episode": "egoxperience_B038_a8debb07",
+    "checkpoint": 34000,
+    "trainingVerified": true
+  },
+  {
+    "id": "hot3d-03",
+    "dataset": "HOT3D",
+    "episode": "hot3d_ep000208",
+    "trainingVerified": true
+  },
+  {
+    "id": "hoi4d-contact-07-34000",
+    "dataset": "HOI4D",
+    "episode": "ZY20210800002_H2_C1_N18_S339_s04_T2",
+    "checkpoint": 34000,
+    "trainingVerified": true
+  },
+  {
+    "id": "h2o-03",
+    "dataset": "H2O",
+    "episode": "subject3_k1_take03",
+    "trainingVerified": true
+  }
+]

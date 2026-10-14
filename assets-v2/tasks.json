@@ -1,0 +1,50 @@
+[
+  {
+    "id": "workspace",
+    "case": "B092"
+  },
+  {
+    "id": "rooms",
+    "case": "B046"
+  },
+  {
+    "id": "outdoor",
+    "case": "B072"
+  },
+  {
+    "id": "task04",
+    "case": "B001"
+  },
+  {
+    "id": "task05-outdoor",
+    "case": "B155"
+  },
+  {
+    "id": "task06",
+    "case": "B012"
+  },
+  {
+    "id": "task07",
+    "case": "B038"
+  },
+  {
+    "id": "task08",
+    "case": "B054"
+  },
+  {
+    "id": "task09",
+    "case": "B091"
+  },
+  {
+    "id": "task10",
+    "case": "B002"
+  },
+  {
+    "id": "task11",
+    "case": "B138"
+  },
+  {
+    "id": "task12",
+    "case": "B156"
+  }
+]

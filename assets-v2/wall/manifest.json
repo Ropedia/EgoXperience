@@ -1,0 +1,82 @@
+[
+  {
+    "case": "B001",
+    "video": "assets-v2/wall/b001.mp4",
+    "poster": "assets-v2/wall/b001.jpg"
+  },
+  {
+    "case": "B002",
+    "video": "assets-v2/wall/b002.mp4",
+    "poster": "assets-v2/wall/b002.jpg"
+  },
+  {
+    "case": "B005",
+    "video": "assets-v2/wall/b005.mp4",
+    "poster": "assets-v2/wall/b005.jpg"
+  },
+  {
+    "case": "B012",
+    "video": "assets-v2/wall/b012.mp4",
+    "poster": "assets-v2/wall/b012.jpg"
+  },
+  {
+    "case": "B038",
+    "video": "assets-v2/wall/b038.mp4",
+    "poster": "assets-v2/wall/b038.jpg"
+  },
+  {
+    "case": "B046",
+    "video": "assets-v2/wall/b046.mp4",
+    "poster": "assets-v2/wall/b046.jpg"
+  },
+  {
+    "case": "B054",
+    "video": "assets-v2/wall/b054.mp4",
+    "poster": "assets-v2/wall/b054.jpg"
+  },
+  {
+    "case": "B072",
+    "video": "assets-v2/wall/b072.mp4",
+    "poster": "assets-v2/wall/b072.jpg"
+  },
+  {
+    "case": "B091",
+    "video": "assets-v2/wall/b091.mp4",
+    "poster": "assets-v2/wall/b091.jpg"
+  },
+  {
+    "case": "B092",
+    "video": "assets-v2/wall/b092.mp4",
+    "poster": "assets-v2/wall/b092.jpg"
+  },
+  {
+    "case": "B121",
+    "video": "assets-v2/wall/b121.mp4",
+    "poster": "assets-v2/wall/b121.jpg"
+  },
+  {
+    "case": "B133",
+    "video": "assets-v2/wall/b133.mp4",
+    "poster": "assets-v2/wall/b133.jpg"
+  },
+  {
+    "case": "B138",
+    "video": "assets-v2/wall/b138.mp4",
+    "poster": "assets-v2/wall/b138.jpg"
+  },
+  {
+    "case": "B140",
+    "video": "assets-v2/wall/b140.mp4",
+    "poster": "assets-v2/wall/b140.jpg"
+  },
+  {
+    "case": "B155",
+    "video": "assets-v2/wall/b155.mp4",
+    "poster": "assets-v2/wall/b155.jpg"
+  },
+  {
+    "case": "B156",
+    "video": "assets-v2/wall/b156.mp4",
+    "poster": "assets-v2/wall/b156.jpg"
+  }
+]

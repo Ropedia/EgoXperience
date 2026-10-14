@@ -1,0 +1,380 @@
+[
+  {
+    "name": "workspace",
+    "sourceFrames": [
+      2400,
+      2590
+    ],
+    "audioSeconds": [
+      80.097674894,
+      86.431062495
+    ],
+    "cues": [
+      {
+        "text": "Place the green lidded box to the right of the light-purple lidded box.",
+        "textZh": "将绿色带盖塑料盒放在淡紫色带盖塑料盒的右侧",
+        "startAudio": 74.48,
+        "endAudio": 81.76
+      }
+    ],
+    "asrSha256": "01bcca19779e6e88b36f9f79255a05d0085c1e9b0d91d7723b9d9b2f72cb271d",
+    "alignMismatches": 0,
+    "sourceFrameCount": 96,
+    "speechFrames": 25,
+    "freshInference": true,
+    "captionAssignment": "Latest cue with startAudio <= frame audio time; retained until the next cue starts. Cue start/end remain original speech timestamps.",
+    "captionedFrames": 96
+  },
+  {
+    "name": "rooms",
+    "sourceFrames": [
+      360,
+      550
+    ],
+    "audioSeconds": [
+      12.104730636,
+      18.433758699
+    ],
+    "cues": [
+      {
+        "text": "Rotate the headphone box with both hands.",
+        "textZh": "双手旋转耳机包装盒",
+        "startAudio": 6,
+        "endAudio": 8
+      },
+      {
+        "text": "Put down the headphone box with both hands.",
+        "textZh": "双手放下耳机包装盒",
+        "startAudio": 16.32,
+        "endAudio": 18.08
+      }
+    ],
+    "asrSha256": "962f4f15cfec19a2fc71facc7aaba95a25d21d8933a6ea68b87f660a45fc9613",
+    "alignMismatches": 0,
+    "sourceFrameCount": 96,
+    "speechFrames": 26,
+    "freshInference": true,
+    "captionAssignment": "Latest cue with startAudio <= frame audio time; retained until the next cue starts. Cue start/end remain original speech timestamps.",
+    "captionedFrames": 96
+  },
+  {
+    "name": "outdoor",
+    "sourceFrames": [
+      2280,
+      2470
+    ],
+    "audioSeconds": [
+      76.113266268,
+      82.446638543
+    ],
+    "cues": [
+      {
+        "text": "Pick up the off-white box sideways with the right hand.",
+        "textZh": "右手横向拿起米白色盒子",
+        "startAudio": 70.96,
+        "endAudio": 73.12
+      }
+    ],
+    "asrSha256": "1663b6c1004ff0e8c82ff83b59aa3f3da8719b907850b556db978805162450a8",
+    "alignMismatches": 0,
+    "sourceFrameCount": 96,
+    "speechFrames": 0,
+    "freshInference": true,
+    "captionAssignment": "Latest cue with startAudio <= frame audio time; retained until the next cue starts. Cue start/end remain original speech timestamps.",
+    "captionedFrames": 96
+  },
+  {
+    "name": "task04",
+    "sourceFrames": [
+      1560,
+      1750
+    ],
+    "audioSeconds": [
+      52.088507585,
+      58.421835432
+    ],
+    "cues": [
+      {
+        "text": "Pick up the blue mug with the right hand.",
+        "textZh": "右手拿起蓝色马克杯",
+        "startAudio": 48.64,
+        "endAudio": 50.96
+      },
+      {
+        "text": "Pass the blue mug from the right hand to the left hand.",
+        "textZh": "右手将蓝色马克杯递至左手",
+        "startAudio": 54,
+        "endAudio": 56.64
+      }
+    ],
+    "asrSha256": "a6f1ff8aebb26f52ecc2f197367812f250be568aadbfcdbc7525af48e68bb7f8",
+    "alignMismatches": 0,
+    "sourceFrameCount": 96,
+    "speechFrames": 40,
+    "freshInference": true,
+    "captionAssignment": "Latest cue with startAudio <= frame audio time; retained until the next cue starts. Cue start/end remain original speech timestamps.",
+    "captionedFrames": 96
+  },
+  {
+    "name": "task05-outdoor",
+    "sourceFrames": [
+      240,
+      430
+    ],
+    "audioSeconds": [
+      8.138029291,
+      14.471944443
+    ],
+    "cues": [
+      {
+        "text": "Pick up the red bucket with the left hand.",
+        "textZh": "左手拿起红色桶",
+        "startAudio": 1.6,
+        "endAudio": 3.12
+      }
+    ],
+    "asrSha256": "a9e87813735dc94485a0622e347c18cb7f54d6400b3e4ea25f7b32e1fe5d62ac",
+    "alignMismatches": 0,
+    "sourceFrameCount": 96,
+    "speechFrames": 0,
+    "freshInference": true,
+    "captionAssignment": "Latest cue with startAudio <= frame audio time; retained until the next cue starts. Cue start/end remain original speech timestamps.",
+    "captionedFrames": 96
+  },
+  {
+    "name": "task06",
+    "sourceFrames": [
+      3360,
+      3550
+    ],
+    "audioSeconds": [
+      112.080281421,
+      118.409498125
+    ],
+    "cues": [
+      {
+        "text": "Pick up the bookend with both hands.",
+        "textZh": "双手拿起书立",
+        "startAudio": 107.92,
+        "endAudio": 111.825
+      },
+      {
+        "text": "Align the bookend with the table using both hands.",
+        "textZh": "双手把书立的直角与桌子并列",
+        "startAudio": 113.12,
+        "endAudio": 116.8
+      },
+      {
+        "text": "Pick up the vase with both hands.",
+        "textZh": "双手拿起花瓶",
+        "startAudio": 118.08,
+        "endAudio": 123.92
+      }
+    ],
+    "asrSha256": "808dec2756117f8cda0ed910ffa4bedbe2c3706a96199a10db346eb4450ce175",
+    "alignMismatches": 0,
+    "sourceFrameCount": 96,
+    "speechFrames": 61,
+    "freshInference": true,
+    "captionAssignment": "Latest cue with startAudio <= frame audio time; retained until the next cue starts. Cue start/end remain original speech timestamps.",
+    "captionedFrames": 96
+  },
+  {
+    "name": "task07",
+    "sourceFrames": [
+      960,
+      1150
+    ],
+    "audioSeconds": [
+      32.088085784,
+      38.421233824
+    ],
+    "cues": [
+      {
+        "text": "Lower the spatula with the right hand.",
+        "textZh": "右手放低锅铲",
+        "startAudio": 31.12,
+        "endAudio": 32.4
+      },
+      {
+        "text": "Align it with the concave surface of the spoon rest.",
+        "textZh": "使其与勺托凹面对齐",
+        "startAudio": 32.56,
+        "endAudio": 34.64
+      },
+      {
+        "text": "Raise the spatula with the right hand.",
+        "textZh": "右手抬起锅铲",
+        "startAudio": 37.84,
+        "endAudio": 39.12
+      }
+    ],
+    "asrSha256": "57300220307f895ce80557612a9757d7ddcbc8e0b7cf73bacf5885ac08b2ae58",
+    "alignMismatches": 0,
+    "sourceFrameCount": 96,
+    "speechFrames": 45,
+    "freshInference": true,
+    "captionAssignment": "Latest cue with startAudio <= frame audio time; retained until the next cue starts. Cue start/end remain original speech timestamps.",
+    "captionedFrames": 96
+  },
+  {
+    "name": "task08",
+    "sourceFrames": [
+      1320,
+      1510
+    ],
+    "audioSeconds": [
+      44.135227131,
+      50.473059587
+    ],
+    "cues": [
+      {
+        "text": "Move to the dining table.",
+        "textZh": "移动至餐桌旁",
+        "startAudio": 43.04,
+        "endAudio": 44.4
+      }
+    ],
+    "asrSha256": "062b0cacaeca4f5f4716e373523c0d3f116a509c51451e6fe2f7ce26fae284fb",
+    "alignMismatches": 0,
+    "sourceFrameCount": 96,
+    "speechFrames": 4,
+    "freshInference": true,
+    "captionAssignment": "Latest cue with startAudio <= frame audio time; retained until the next cue starts. Cue start/end remain original speech timestamps.",
+    "captionedFrames": 96
+  },
+  {
+    "name": "task09",
+    "sourceFrames": [
+      120,
+      310
+    ],
+    "audioSeconds": [
+      4.689134073,
+      11.022404597
+    ],
+    "cues": [
+      {
+        "text": "Pull the board closer with the left hand.",
+        "textZh": "左手将主板拉近",
+        "startAudio": 0,
+        "endAudio": 4.08
+      },
+      {
+        "text": "Move the board farther away with the left hand.",
+        "textZh": "左手将主板拉远",
+        "startAudio": 5.12,
+        "endAudio": 5.56
+      },
+      {
+        "text": "Pull the alarm clock closer with the right hand.",
+        "textZh": "右手将闹钟拉近",
+        "startAudio": 8.08,
+        "endAudio": 9.28
+      },
+      {
+        "text": "Push the alarm clock away with the right hand.",
+        "textZh": "右手将闹钟推远",
+        "startAudio": 9.28,
+        "endAudio": 13.44
+      }
+    ],
+    "asrSha256": "17996874bbe7d82c2f1394f233dceed57786f5c3bca73ff6db0cd1dd91751641",
+    "alignMismatches": 0,
+    "sourceFrameCount": 96,
+    "speechFrames": 52,
+    "freshInference": true,
+    "captionAssignment": "Latest cue with startAudio <= frame audio time; retained until the next cue starts. Cue start/end remain original speech timestamps.",
+    "captionedFrames": 96
+  },
+  {
+    "name": "task10",
+    "sourceFrames": [
+      960,
+      1150
+    ],
+    "audioSeconds": [
+      32.136507152,
+      38.469913198
+    ],
+    "cues": [
+      {
+        "text": "Rotate the two mugs with both hands.",
+        "textZh": "双手旋转两个马克杯",
+        "startAudio": 28.4,
+        "endAudio": 29.92
+      }
+    ],
+    "asrSha256": "094128c8ad70438c377d2438ce4237005550a3b7ab86e71a67e5512a4595f871",
+    "alignMismatches": 0,
+    "sourceFrameCount": 96,
+    "speechFrames": 0,
+    "freshInference": true,
+    "captionAssignment": "Latest cue with startAudio <= frame audio time; retained until the next cue starts. Cue start/end remain original speech timestamps.",
+    "captionedFrames": 96
+  },
+  {
+    "name": "task11",
+    "sourceFrames": [
+      120,
+      310
+    ],
+    "audioSeconds": [
+      4.12741281,
+      10.460786053
+    ],
+    "cues": [
+      {
+        "text": "Pick up the blue plate with the left hand.",
+        "textZh": "左手拿起蓝色盘子",
+        "startAudio": 3.04,
+        "endAudio": 5.28
+      },
+      {
+        "text": "Put down the blue plate with the left hand.",
+        "textZh": "左手放下蓝色盘子",
+        "startAudio": 7.28,
+        "endAudio": 8.88
+      }
+    ],
+    "asrSha256": "3ee685d693cd262c1e639465747e898b29edabb1cc279f8010a2728e9b85370f",
+    "alignMismatches": 0,
+    "sourceFrameCount": 96,
+    "speechFrames": 42,
+    "freshInference": true,
+    "captionAssignment": "Latest cue with startAudio <= frame audio time; retained until the next cue starts. Cue start/end remain original speech timestamps.",
+    "captionedFrames": 96
+  },
+  {
+    "name": "task12",
+    "sourceFrames": [
+      2880,
+      3070
+    ],
+    "audioSeconds": [
+      96.115967503,
+      102.449690963
+    ],
+    "cues": [
+      {
+        "text": "Change the grip on the object.",
+        "textZh": "改变物体持握方式",
+        "startAudio": 75.2,
+        "endAudio": 76.96
+      },
+      {
+        "text": "Put down the trivet with the right hand.",
+        "textZh": "右手放下锅垫",
+        "startAudio": 99.84,
+        "endAudio": 100.96
+      }
+    ],
+    "asrSha256": "628e195dc34438ea02a79d3638d5ea0b85b46dc1deca8e4c0b212d9c67d37435",
+    "alignMismatches": 0,
+    "sourceFrameCount": 96,
+    "speechFrames": 17,
+    "freshInference": true,
+    "captionAssignment": "Latest cue with startAudio <= frame audio time; retained until the next cue starts. Cue start/end remain original speech timestamps.",
+    "captionedFrames": 96
+  }
+]

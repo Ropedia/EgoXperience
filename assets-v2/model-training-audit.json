@@ -1,0 +1,102 @@
+[
+  {
+    "id": "workspace",
+    "dataset": "EgoX-Data-6M",
+    "episode": "egoxperience_B092_0c6791d400",
+    "train_list_sha256": "95abe2647262c2b152570869ccc694b0567823f67e76fdab54e6aa209bcc3963",
+    "verified": true,
+    "scope": "Training-list sequence membership, not per-window optimizer visitation"
+  },
+  {
+    "id": "task11",
+    "dataset": "EgoX-Data-6M",
+    "episode": "egoxperience_B138_323cf9dd",
+    "train_list_sha256": "95abe2647262c2b152570869ccc694b0567823f67e76fdab54e6aa209bcc3963",
+    "verified": true,
+    "scope": "Training-list sequence membership, not per-window optimizer visitation"
+  },
+  {
+    "id": "egox-contact-task07-34000",
+    "dataset": "EgoX-Data-6M",
+    "episode": "egoxperience_B038_a8debb07",
+    "train_list_sha256": "95abe2647262c2b152570869ccc694b0567823f67e76fdab54e6aa209bcc3963",
+    "verified": true,
+    "scope": "Training-list sequence membership, not per-window optimizer visitation",
+    "checkpoint": 34000
+  },
+  {
+    "id": "hot3d-01",
+    "dataset": "HOT3D",
+    "episode": "hot3d_ep000305",
+    "train_list_sha256": "19c9518837eb4684c5166dd73ff0d1ae0e5b9113da31efee9eddb16c76e0c3cd",
+    "verified": true,
+    "scope": "Training-list sequence membership, not per-window optimizer visitation"
+  },
+  {
+    "id": "hot3d-02",
+    "dataset": "HOT3D",
+    "episode": "hot3d_ep000301",
+    "train_list_sha256": "19c9518837eb4684c5166dd73ff0d1ae0e5b9113da31efee9eddb16c76e0c3cd",
+    "verified": true,
+    "scope": "Training-list sequence membership, not per-window optimizer visitation"
+  },
+  {
+    "id": "hot3d-03",
+    "dataset": "HOT3D",
+    "episode": "hot3d_ep000208",
+    "train_list_sha256": "19c9518837eb4684c5166dd73ff0d1ae0e5b9113da31efee9eddb16c76e0c3cd",
+    "verified": true,
+    "scope": "Training-list sequence membership, not per-window optimizer visitation"
+  },
+  {
+    "id": "hoi4d-contact-06-34000",
+    "dataset": "HOI4D",
+    "episode": "ZY20210800002_H2_C1_N12_S339_s01_T2",
+    "train_list_sha256": "ede9935f26f4a5021e8be5343d5e0304922da7cc38f8b3c6f29e2033505bea82",
+    "verified": true,
+    "scope": "Training-list sequence membership, not per-window optimizer visitation",
+    "checkpoint": 34000
+  },
+  {
+    "id": "hoi4d-contact-03-30500",
+    "dataset": "HOI4D",
+    "episode": "ZY20210800002_H2_C1_N03_S336_s02_T1",
+    "train_list_sha256": "ede9935f26f4a5021e8be5343d5e0304922da7cc38f8b3c6f29e2033505bea82",
+    "verified": true,
+    "scope": "Training-list sequence membership, not per-window optimizer visitation",
+    "checkpoint": 30500
+  },
+  {
+    "id": "hoi4d-contact-07-34000",
+    "dataset": "HOI4D",
+    "episode": "ZY20210800002_H2_C1_N18_S339_s04_T2",
+    "train_list_sha256": "ede9935f26f4a5021e8be5343d5e0304922da7cc38f8b3c6f29e2033505bea82",
+    "verified": true,
+    "scope": "Training-list sequence membership, not per-window optimizer visitation",
+    "checkpoint": 34000
+  },
+  {
+    "id": "h2o-01",
+    "dataset": "H2O",
+    "episode": "subject2_o1_take01",
+    "train_list_sha256": "ede69f7ccc027ee27cbc644e76ec729abf0e1f5ad4537085bf12f7af605346f1",
+    "verified": true,
+    "scope": "Training-list sequence membership, not per-window optimizer visitation"
+  },
+  {
+    "id": "h2o-02",
+    "dataset": "H2O",
+    "episode": "subject2_o1_take04",
+    "train_list_sha256": "ede69f7ccc027ee27cbc644e76ec729abf0e1f5ad4537085bf12f7af605346f1",
+    "verified": true,
+    "scope": "Training-list sequence membership, not per-window optimizer visitation"
+  },
+  {
+    "id": "h2o-03",
+    "dataset": "H2O",
+    "episode": "subject3_k1_take03",
+    "train_list_sha256": "ede69f7ccc027ee27cbc644e76ec729abf0e1f5ad4537085bf12f7af605346f1",
+    "verified": true,
+    "scope": "Training-list sequence membership, not per-window optimizer visitation"
+  }
+]
