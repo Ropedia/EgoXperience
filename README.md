@@ -30,7 +30,9 @@
   <img src="./assets/arxiv-badge.png" height="20" alt="arXiv coming soon">
   <a href="./demo.mp4"><img src="https://img.shields.io/badge/Video-MP4-e53935?logo=youtube&amp;logoColor=white" alt="Demo video"></a>
   <a href="https://github.com/Ropedia/EgoXperience"><img src="https://img.shields.io/badge/GitHub-Code-181717?logo=github&amp;logoColor=white" alt="GitHub code"></a>
-  <a href="https://huggingface.co/collections/ropedia-ai/egoxperience"><img src="./assets/huggingface-badge.png" height="20" alt="Hugging Face data and models"></a>
+  <a href="https://huggingface.co/datasets/ropedia-ai/EgoX-Data-6M"><img src="https://img.shields.io/badge/🤗_EgoX--Data--6M-coming_soon-f0c000" alt="EgoX-Data-6M coming soon"></a>
+  <a href="https://huggingface.co/datasets/ropedia-ai/EgoX-Bench"><img src="https://img.shields.io/badge/🤗_EgoX--Bench-coming_soon-f0c000" alt="EgoX-Bench coming soon"></a>
+  <a href="https://huggingface.co/ropedia-ai/EgoX"><img src="https://img.shields.io/badge/🤗_EgoX-coming_soon-f0c000" alt="EgoX coming soon"></a>
 </p>
 
 https://github.com/user-attachments/assets/f2d88514-17e6-473a-ae63-c3d997e05d67
