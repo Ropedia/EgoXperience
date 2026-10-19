@@ -26,11 +26,11 @@
 </p>
 
 <p align="center">
-  <a href="https://ropedia.github.io/EgoXperience/"><img src="https://img.shields.io/badge/Project_Page-online-2ea44f?logo=githubpages&amp;logoColor=white" alt="Project Page"></a>
-  <img src="https://img.shields.io/badge/arXiv-coming_soon-b31b1b?logo=arxiv&amp;logoColor=white" alt="arXiv coming soon">
+  <a href="https://ropedia.github.io/EgoXperience/"><img src="https://img.shields.io/badge/Project_Page-online-2ea44f" alt="Project Page"></a>
+  <img src="https://img.shields.io/badge/arXiv-coming_soon-b31b1b?logo=arxiv&amp;logoColor=B31B1B" alt="arXiv coming soon">
   <a href="./demo.mp4"><img src="https://img.shields.io/badge/Video-MP4-e53935?logo=youtube&amp;logoColor=white" alt="Demo video"></a>
   <a href="https://github.com/Ropedia/EgoXperience"><img src="https://img.shields.io/badge/GitHub-Code-181717?logo=github&amp;logoColor=white" alt="GitHub code"></a>
-  <a href="https://huggingface.co/collections/ropedia-ai/egoxperience"><img src="https://img.shields.io/badge/Hugging_Face-Data_%26_Models-FFD21E?logo=huggingface&amp;logoColor=000000" alt="Hugging Face data and models"></a>
+  <a href="https://huggingface.co/collections/ropedia-ai/egoxperience"><img src="https://img.shields.io/badge/Hugging_Face-Data_%26_Models-FFD21E?logo=huggingface&amp;logoColor=FFD21E" alt="Hugging Face data and models"></a>
 </p>
 
 https://github.com/user-attachments/assets/f2d88514-17e6-473a-ae63-c3d997e05d67
