@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+message: "If you use EgoXperience, please cite this technical report."
+title: "EgoXperience: Learning World-Grounded Egocentric Representations from Human Experience"
+type: article
+authors:
+  - family-names: Ji
+    given-names: Xinhao
+  - family-names: Pang
+    given-names: Hui En
+  - family-names: Li
+    given-names: Hao
+  - family-names: Hu
+    given-names: Kairui
+  - family-names: Wang
+    given-names: Jiner
+  - family-names: Sun
+    given-names: Mingze
+  - family-names: Cao
+    given-names: Ziang
+  - family-names: Dai
+    given-names: Yalun
+  - family-names: Luu
+    given-names: Thang
+  - family-names: Ma
+    given-names: Qin
+  - family-names: Chen
+    given-names: Hongyi
+  - family-names: Cao
+    given-names: Yukang
+  - family-names: Hong
+    given-names: Fangzhou
+  - family-names: Chen
+    given-names: Zhaoxi
+  - family-names: Liu
+    given-names: Ziwei
+year: 2026
+url: "https://ropedia.github.io/EgoXperience/"
+repository-code: "https://github.com/Ropedia/EgoXperience"
