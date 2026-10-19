@@ -4,6 +4,7 @@ import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
 import {gunzipSync} from './vendor/fflate/browser.js';
 const $=(s,r)=>r.querySelector(s);
 const matrix=a=>new THREE.Matrix4().fromArray(a).transpose();
+function axesMarker(){const marker=new THREE.Object3D();marker.matrixAutoUpdate=false;return marker;}
 // Bounded session cache: revisiting recent frames does not repeat network requests.
 const chunkCache=new Map();let cacheBytes=0;
 function remember(key,buffer){if(chunkCache.has(key))return;chunkCache.set(key,buffer);cacheBytes+=buffer.byteLength;while(cacheBytes>48*1024*1024){const oldest=chunkCache.keys().next().value;cacheBytes-=chunkCache.get(oldest).byteLength;chunkCache.delete(oldest);}}
@@ -82,7 +83,7 @@ export class SequenceViewer {
   return job;
  }
  init(object){
-  this.renderer=new THREE.WebGLRenderer({antialias:true,alpha:true});this.renderer.setPixelRatio(Math.min(devicePixelRatio,1.6));this.renderer.setClearColor(0x102326,0);this.renderer.outputColorSpace=THREE.SRGBColorSpace;this.container.append(this.renderer.domElement);
+  this.renderer=new THREE.WebGLRenderer({antialias:true,alpha:false});this.renderer.setPixelRatio(Math.min(devicePixelRatio,1.6));this.renderer.setClearColor(0x000000,1);this.renderer.outputColorSpace=THREE.SRGBColorSpace;this.container.append(this.renderer.domElement);this.axesCanvas=document.createElement('canvas');this.axesCanvas.className='axes-overlay';this.container.append(this.axesCanvas);
   this.renderer.domElement.setAttribute('aria-label','Interactive scene: drag to orbit, right-drag to pan, scroll to zoom.');this.renderer.domElement.tabIndex=0;
   this.scene=new THREE.Scene();this.camera=new THREE.PerspectiveCamera(48,1,.01,100);this.controls=new OrbitControls(this.camera,this.renderer.domElement);this.controls.enableDamping=true;this.controls.dampingFactor=.09;this.controls.minDistance=.08;this.controls.maxDistance=20;
   this.controls.addEventListener('start',()=>{this.mode='orbit';$('.view-mode',this.root).textContent='FREE VIEW';});
@@ -90,12 +91,22 @@ export class SequenceViewer {
   const N=this.data.pointCapacity;const geo=new THREE.BufferGeometry();geo.setAttribute('position',new THREE.BufferAttribute(new Float32Array(N*3),3));geo.setAttribute('color',new THREE.BufferAttribute(new Uint8Array(N*3),3,true));geo.setDrawRange(0,0);
   this.parts={points:new THREE.Points(geo,new THREE.PointsMaterial({size:.012,vertexColors:true,sizeAttenuation:true,transparent:true,opacity:.9,depthWrite:true}))};this.parts.points.frustumCulled=false;
   for(const [side,color] of [['left',0x50a6ed],['right',0xf09865]]){const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.BufferAttribute(new Float32Array(778*3),3));g.setIndex(new THREE.BufferAttribute(this.arrays[side+'Faces'],1));const m=new THREE.Mesh(g,new THREE.MeshStandardMaterial({color,roughness:.8,side:THREE.DoubleSide}));m.frustumCulled=false;this.parts[side]=m;}
-  this.assetBox=new THREE.Box3().setFromObject(object);this.parts.object=object;object.matrixAutoUpdate=false;this.parts.axes=new THREE.AxesHelper(.14);this.parts.axes.matrixAutoUpdate=false;this.parts.axes.material.depthTest=false;this.parts.axes.renderOrder=10;
+  this.assetBox=new THREE.Box3().setFromObject(object);this.parts.object=object;object.matrixAutoUpdate=false;this.parts.axes=axesMarker();
   const fg=new THREE.BufferGeometry();fg.setAttribute('position',new THREE.BufferAttribute(new Float32Array(16*3),3));this.parts.camera=new THREE.LineSegments(fg,new THREE.LineBasicMaterial({color:0x87d2d7,transparent:true,opacity:.85}));this.parts.camera.frustumCulled=false;
   Object.values(this.parts).forEach(x=>this.scene.add(x));
   this.resize=new ResizeObserver(()=>{const w=this.container.clientWidth,h=this.container.clientHeight;if(!w||!h)return;this.renderer.setSize(w,h);this.camera.aspect=w/h;this.camera.updateProjectionMatrix();});this.resize.observe(this.container);
   this.last=performance.now();this.accum=0;
-  const loop=now=>{if(!this.renderer)return;this.raf=requestAnimationFrame(loop);const dt=Math.min((now-this.last)/1000,.15);this.last=now;if(!this.active||document.hidden)return;if(this.playing){this.accum+=dt*this.speed*this.data.fps;if(this.accum>=1){const step=Math.floor(this.accum);this.accum-=step;this.update((this.frame+step)%this.data.nFrames);}}if(this.mode!=='first')this.controls.update();this.renderer.render(this.scene,this.camera);};this.raf=requestAnimationFrame(loop);
+  const loop=now=>{if(!this.renderer)return;this.raf=requestAnimationFrame(loop);const dt=Math.min((now-this.last)/1000,.15);this.last=now;if(!this.active||document.hidden)return;if(this.playing){this.accum+=dt*this.speed*this.data.fps;if(this.accum>=1){const step=Math.floor(this.accum);this.accum-=step;this.update((this.frame+step)%this.data.nFrames);}}if(this.mode!=='first')this.controls.update();this.renderer.render(this.scene,this.camera);this.drawAxesOverlay();};this.raf=requestAnimationFrame(loop);
+ }
+ drawAxesOverlay(){
+  const canvas=this.axesCanvas;if(!canvas)return;const width=this.container.clientWidth,height=this.container.clientHeight,dpr=Math.min(devicePixelRatio,1.6),ctx=canvas.getContext('2d');
+  if(canvas.width!==Math.round(width*dpr)||canvas.height!==Math.round(height*dpr)){canvas.width=Math.round(width*dpr);canvas.height=Math.round(height*dpr);canvas.style.width=width+'px';canvas.style.height=height+'px';}
+  ctx.setTransform(dpr,0,0,dpr,0,0);ctx.clearRect(0,0,width,height);if(!this.parts?.axes?.visible||!width||!height)return;
+  const project=local=>{const p=local.clone().applyMatrix4(this.parts.axes.matrix).project(this.camera);return {x:(p.x*.5+.5)*width,y:(-.5*p.y+.5)*height,z:p.z};};
+  const origin=project(new THREE.Vector3()),axes=[[new THREE.Vector3(.18,0,0),'#ff6969'],[new THREE.Vector3(0,.18,0),'#73e18a'],[new THREE.Vector3(0,0,.18),'#70a0ff']];
+  if(origin.z<-1||origin.z>1)return;ctx.lineCap='round';ctx.lineJoin='round';
+  for(const [endpoint,color] of axes){const tip=project(endpoint);ctx.beginPath();ctx.moveTo(origin.x,origin.y);ctx.lineTo(tip.x,tip.y);ctx.strokeStyle=color;ctx.lineWidth=3;ctx.shadowColor=color;ctx.shadowBlur=7;ctx.stroke();ctx.beginPath();ctx.arc(tip.x,tip.y,3.2,0,Math.PI*2);ctx.fillStyle=color;ctx.fill();}
+  ctx.shadowBlur=5;ctx.beginPath();ctx.arc(origin.x,origin.y,3.6,0,Math.PI*2);ctx.fillStyle='#f3f7f0';ctx.fill();ctx.setTransform(1,0,0,1,0,0);
  }
  update(frame){
   if(!this.data||!this.parts)return;
@@ -128,5 +139,5 @@ export class SequenceViewer {
  setView(mode){if(!this.parts)return;this.mode=mode;this.controls.enabled=mode!=='first';if(mode==='first'){this.firstPerson();$('.view-mode',this.root).textContent='FIRST-PERSON VIEW';}else{const target=new THREE.Vector3().setFromMatrixPosition(matrix(this.data.objectMatrices[this.frame]));this.controls.target.copy(target);this.camera.position.copy(target).add(new THREE.Vector3(.38,.42,.9));this.camera.up.set(0,1,0);this.camera.fov=48;this.camera.updateProjectionMatrix();this.controls.update();$('.view-mode',this.root).textContent='FREE VIEW';}this.layers();}
  setPlaying(value){this.playing=value&&!!this.parts;this.accum=0;$('.play',this.root).textContent=this.playing?'Ⅱ':'▷';$('.play',this.root).setAttribute('aria-label',this.playing?'Pause reconstruction':'Play reconstruction');if(this.audio){if(this.playing&&this.audioEnabled){this.audio.playbackRate=this.speed;this.audio.play().catch(()=>{});}else this.audio.pause();}}
  disposeObject(object){object?.traverse(o=>{o.geometry?.dispose();const mats=o.material?(Array.isArray(o.material)?o.material:[o.material]):[];for(const m of mats){for(const v of Object.values(m))if(v?.isTexture)v.dispose();m.dispose();}});}
- clear(){this.setPlaying(false);if(this.audio){this.audio.removeAttribute('src');this.audio.load();this.audio=null;}cancelAnimationFrame(this.raf);this.resize?.disconnect();this.controls?.dispose();this.disposeObject(this.scene);this.renderer?.dispose();this.renderer=null;this.parts=null;this.data=null;this.images=null;this.arrays=null;this.scene=null;this.container.replaceChildren();}
+ clear(){this.setPlaying(false);if(this.audio){this.audio.removeAttribute('src');this.audio.load();this.audio=null;}cancelAnimationFrame(this.raf);this.resize?.disconnect();this.controls?.dispose();this.disposeObject(this.scene);this.renderer?.dispose();this.renderer=null;this.axesCanvas=null;this.parts=null;this.data=null;this.images=null;this.arrays=null;this.scene=null;this.container.replaceChildren();}
 }

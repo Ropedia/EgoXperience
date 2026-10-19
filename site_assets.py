@@ -6,10 +6,10 @@ def runtime_files(root):
     root = Path(root).resolve()
     assets = root / 'assets-v2'
     # Public provenance for the training-composition panel.
-    files = {Path(n) for n in ['index.html', 'v2.css', 'v2.js', 'data-player.js', 'sequence-viewer.js', 'metrics.js', '.nojekyll']}
+    files = {Path(n) for n in ['index.html', 'v2.css', 'preview.css', 'v2.js', 'preview.js', 'data-player.js', 'sequence-viewer.js', 'metrics.js', '.nojekyll']}
     for directory in ['vendor', 'assets-v2/fonts']:
         files.update(p.relative_to(root) for p in (root / directory).rglob('*') if p.is_file())
-    for n in ['tasks.json', 'model-tasks.json', 'caption-asr-audit.json', 'model-training-audit.json', 'institution-logo-sources.json', 'x-hd.png', 'logo-ropedia.png', 'logo-ntu.png', 'logo-tsinghua-purple.jpg', 'logo-pku-horizontal.png', 'engine/pipeline.svg', 'engine/neural-network.svg', 'engine/product-source.json', 'engine/homie-gen2-product.png', 'wall/manifest.json']:
+    for n in ['tasks.json', 'model-tasks.json', 'caption-asr-audit.json', 'model-training-audit.json', 'institution-logo-sources.json', 'x-hd.png', 'logo-ropedia.png', 'logo-ntu.png', 'logo-tsinghua-purple.jpg', 'logo-pku-horizontal.png', 'engine/neural-network.svg', 'engine/homie-gen2-product.png', 'engine/object-cage-dark.png', 'wall/manifest.json']:
         files.add(Path('assets-v2') / n)
     for item in json.loads((assets / 'wall/manifest.json').read_text()):
         files.update(Path(item[k]) for k in ['video', 'poster'])
@@ -34,6 +34,7 @@ def runtime_files(root):
                 manifest = json.loads((root / base / 'stream.json').read_text())
                 files.update(base / c['file'] for c in manifest['chunks'])
     files.add(Path('assets-v2/training-data-summary.json'))
+    files.add(Path('assets-v2/demo.mp4'))
     return files
 
 if __name__ == '__main__':

@@ -78,5 +78,65 @@
     "case": "B156",
     "video": "assets-v2/wall/b156.mp4",
     "poster": "assets-v2/wall/b156.jpg"
+  },
+  {
+    "case": "Clip-Workspace",
+    "video": "assets-v2/data-workspace/raw.mp4",
+    "poster": "assets-v2/data-workspace/poster.jpg"
+  },
+  {
+    "case": "Clip-Rooms",
+    "video": "assets-v2/data-rooms/raw.mp4",
+    "poster": "assets-v2/data-rooms/poster.jpg"
+  },
+  {
+    "case": "Clip-Outdoor",
+    "video": "assets-v2/data-outdoor/raw.mp4",
+    "poster": "assets-v2/data-outdoor/poster.jpg"
+  },
+  {
+    "case": "Clip-04",
+    "video": "assets-v2/data-task04/raw.mp4",
+    "poster": "assets-v2/data-task04/poster.jpg"
+  },
+  {
+    "case": "Clip-05",
+    "video": "assets-v2/data-task05-outdoor/raw.mp4",
+    "poster": "assets-v2/data-task05-outdoor/poster.jpg"
+  },
+  {
+    "case": "Clip-06",
+    "video": "assets-v2/data-task06/raw.mp4",
+    "poster": "assets-v2/data-task06/poster.jpg"
+  },
+  {
+    "case": "Clip-07",
+    "video": "assets-v2/data-task07/raw.mp4",
+    "poster": "assets-v2/data-task07/poster.jpg"
+  },
+  {
+    "case": "Clip-08",
+    "video": "assets-v2/data-task08/raw.mp4",
+    "poster": "assets-v2/data-task08/poster.jpg"
+  },
+  {
+    "case": "Clip-09",
+    "video": "assets-v2/data-task09/raw.mp4",
+    "poster": "assets-v2/data-task09/poster.jpg"
+  },
+  {
+    "case": "Clip-10",
+    "video": "assets-v2/data-task10/raw.mp4",
+    "poster": "assets-v2/data-task10/poster.jpg"
+  },
+  {
+    "case": "Clip-11",
+    "video": "assets-v2/data-task11/raw.mp4",
+    "poster": "assets-v2/data-task11/poster.jpg"
+  },
+  {
+    "case": "Clip-12",
+    "video": "assets-v2/data-task12/raw.mp4",
+    "poster": "assets-v2/data-task12/poster.jpg"
   }
 ]
