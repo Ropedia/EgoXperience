@@ -1,7 +1,7 @@
 name: Deploy project website
 on:
   push:
-    branches: [main, codex/website-final]
+    branches: [page]
   workflow_dispatch:
 permissions:
   contents: read
