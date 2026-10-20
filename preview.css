@@ -230,7 +230,6 @@ body,main{background:#000!important;color:var(--white)}.nav{background:#0b0d12f2
  .engine-flow-node[data-flow-node="verify"] .verify-stack>div{grid-template-rows:auto 42px 42px;min-height:164px}
  .engine-output .flow-output-list{flex:none;margin:14px 0 0;grid-template-rows:repeat(7,auto);gap:8px;align-content:start}
  .engine-output .flow-output-list li{min-height:50px;white-space:normal}
- .dataset-facts{grid-template-columns:1fr!important;gap:10px}
  .distribution-grid{grid-template-columns:1fr!important}
  .distribution-grid article{grid-column:auto!important;width:100%}
 }
