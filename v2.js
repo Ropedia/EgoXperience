@@ -1,10 +1,10 @@
-import {SequenceViewer} from './sequence-viewer.js?v=motion-preview-37';
-import {DataPlayer} from './data-player.js?v=motion-preview-37';
+import {SequenceViewer} from './sequence-viewer.js?v=motion-preview-38';
+import {DataPlayer} from './data-player.js?v=motion-preview-38';
 const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
 let paused=matchMedia('(prefers-reduced-motion: reduce)').matches;const selected={data:'outdoor',model:'workspace'};
 const videos=new IntersectionObserver(es=>es.forEach(e=>{const v=e.target;if(e.isIntersecting&&!paused&&!document.hidden){if(!v.getAttribute('src'))v.src=v.dataset.ambient;v.play().catch(()=>{});}else v.pause();}),{threshold:.01});
 function observeVideo(v){v.muted=true;v.loop=true;v.playsInline=true;videos.observe(v);}
-fetch('assets-v2/wall/manifest.json?v=motion-preview-37',{cache:'no-store'}).then(r=>r.json()).then(items=>{
+fetch('assets-v2/wall/manifest.json?v=motion-preview-38',{cache:'no-store'}).then(r=>r.json()).then(items=>{
  const wall=$('#media-wall'),hero=$('.hero');
  const fill=()=>{const cols=innerWidth<=700?4:8,gap=4,size=(hero.clientWidth-gap*(cols-1))/cols,rows=Math.ceil(hero.clientHeight/(size+gap)),count=cols*rows;wall.style.setProperty('--wall-cols',cols);wall.style.setProperty('--wall-rows',rows);
   while(wall.children.length<count){const i=wall.children.length,source=items[i%items.length],tile=document.createElement('div');tile.className='wall-tile';const v=document.createElement('video');v.preload='metadata';v.dataset.ambient=source.video;v.poster=source.poster;v.addEventListener('loadedmetadata',()=>{const cycle=Math.floor(i/items.length);if(cycle&&Number.isFinite(v.duration)&&v.duration>1)v.currentTime=(cycle*1.7)%Math.max(1,v.duration-.3);},{once:true});tile.append(v);wall.append(tile);observeVideo(v);}
