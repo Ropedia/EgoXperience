@@ -33,9 +33,9 @@
     "scope": "Training-list sequence membership, not per-window optimizer visitation"
   },
   {
-    "id": "hot3d-02",
+    "id": "hot3d-02-v2",
     "dataset": "HOT3D",
-    "episode": "hot3d_ep000301",
+    "episode": "hot3d_ep000209",
     "train_list_sha256": "19c9518837eb4684c5166dd73ff0d1ae0e5b9113da31efee9eddb16c76e0c3cd",
     "verified": true,
     "scope": "Training-list sequence membership, not per-window optimizer visitation"

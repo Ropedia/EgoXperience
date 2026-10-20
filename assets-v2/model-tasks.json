@@ -31,9 +31,9 @@
     "trainingVerified": true
   },
   {
-    "id": "hot3d-02",
+    "id": "hot3d-02-v2",
     "dataset": "HOT3D",
-    "episode": "hot3d_ep000301",
+    "episode": "hot3d_ep000209",
     "trainingVerified": true
   },
   {
