@@ -27,7 +27,7 @@
 
 <p align="center">
   <a href="https://ropedia.github.io/EgoXperience/"><img src="https://img.shields.io/badge/Project_Page-online-2ea44f" alt="Project Page"></a>
-  <a href="https://arxiv.org/pdf/2610.26625"><img src="https://img.shields.io/badge/arXiv-2610.26625-b31b1b?logo=arxiv&amp;logoColor=white" alt="EgoXperience paper on arXiv"></a>
+  <a href="https://arxiv.org/abs/2610.26625"><img src="https://img.shields.io/badge/arXiv-2610.26625-b31b1b?logo=arxiv&amp;logoColor=white" alt="EgoXperience paper on arXiv"></a>
   <a href="./demo.mp4"><img src="https://img.shields.io/badge/Video-MP4-e53935?logo=youtube&amp;logoColor=white" alt="Demo video"></a>
   <a href="https://github.com/Ropedia/EgoXperience"><img src="https://img.shields.io/badge/GitHub-Code-181717?logo=github&amp;logoColor=white" alt="GitHub code"></a>
   <a href="https://huggingface.co/datasets/ropedia-ai/EgoX-Data-6M"><img src="https://img.shields.io/badge/🤗_EgoX--Data--6M-coming_soon-f0c000" alt="EgoX-Data-6M coming soon"></a>
