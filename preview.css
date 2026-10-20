@@ -214,6 +214,9 @@ body,main{background:#000!important;color:var(--white)}.nav{background:#0b0d12f2
 .chapter-intro h2,.chapter-intro .paradigm-title,#model #metrics-title{display:flex;justify-content:flex-start;grid-column:auto;max-width:1100px;font-size:clamp(36px,3.8vw,50px);line-height:1.04;letter-spacing:-2px}
 .chapter-copy{width:100%;max-width:none;margin:22px 0 0;font-size:19px;line-height:1.6;color:#b3beb8;text-wrap:wrap}
 #model .metrics-head.chapter-intro>.chapter-copy{width:100%;max-width:none;margin:22px 0 0;font-size:19px;line-height:1.6;color:#b3beb8;text-wrap:wrap}
+#metrics-title{align-items:center;gap:.14em;white-space:nowrap}
+#metrics-title .section-wordmark,#metrics-title .performance-label{display:inline-flex;align-items:center;line-height:1}
+#metrics-title .section-wordmark img{width:1.05em;height:1.05em;margin:0 -.04em;transform:none}
 @media(max-width:800px){.chapter-kicker{margin-bottom:12px}.chapter-kicker:after{font-size:11px}.chapter-intro h2,.chapter-intro .paradigm-title,#model #metrics-title{font-size:34px;letter-spacing:-1.3px}.chapter-copy,#model .metrics-head.chapter-intro>.chapter-copy{width:100%;max-width:none;margin-top:16px;font-size:16px;line-height:1.6}}
 
 /* Portrait phones: one readable column for the Engine and dataset statistics. */
