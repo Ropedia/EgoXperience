@@ -215,13 +215,15 @@ body,main{background:#000!important;color:var(--white)}.nav{background:#0b0d12f2
 #model .metrics-head.chapter-intro>.chapter-copy{width:100%;max-width:none;margin:22px 0 0;font-size:19px;line-height:1.6;color:#b3beb8;text-wrap:wrap}
 @media(max-width:800px){.chapter-kicker{margin-bottom:12px}.chapter-kicker:after{font-size:11px}.chapter-intro h2,.chapter-intro .paradigm-title,#model #metrics-title{font-size:34px;letter-spacing:-1.3px}.chapter-copy,#model .metrics-head.chapter-intro>.chapter-copy{width:100%;max-width:none;margin-top:16px;font-size:16px;line-height:1.6}}
 
-/* Portrait phones: the Engine becomes a true document flow, never a clipped desktop canvas. */
+/* Portrait phones: swipe the five Engine stages left-to-right without moving the page itself. */
 @media(max-width:600px){
  body{overflow-x:hidden}
  #engine{overflow:clip}
- .engine-flow{display:flex!important;flex-direction:column;grid-template:none!important;width:100%;min-width:0;min-height:0;padding:22px 0;gap:18px;overflow:hidden!important;background-size:48px 48px}
+ .engine-flow{display:flex!important;flex-direction:row;align-items:flex-start;grid-template:none!important;width:100%;min-width:0;min-height:0;padding:22px 0 28px;gap:14px;overflow-x:auto!important;overflow-y:hidden!important;scroll-snap-type:x mandatory;scroll-padding-inline:0;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch;touch-action:pan-x pan-y;background-size:48px 48px}
+ .engine-flow::-webkit-scrollbar{display:none}
+ .engine-flow{scrollbar-width:none}
  .engine-flow-wires{display:none}
- .engine-flow-node,.object-source,.capture-source,.engine-flow-node[data-flow-node="track"],.engine-flow-node[data-flow-node="verify"],.engine-output{grid-area:auto!important;grid-row:auto!important;align-self:stretch!important;width:100%;min-width:0;min-height:0!important;margin:0;transform:none!important}
+ .engine-flow-node,.object-source,.capture-source,.engine-flow-node[data-flow-node="track"],.engine-flow-node[data-flow-node="verify"],.engine-output{flex:0 0 min(86vw,360px);grid-area:auto!important;grid-row:auto!important;align-self:flex-start!important;width:auto;min-width:0;min-height:0!important;margin:0;transform:none!important;scroll-snap-align:start;scroll-snap-stop:always}
  .engine-flow-node{padding:20px 16px}
  .engine-flow-node h3,.engine-source h3{white-space:normal;font-size:20px;line-height:1.15}
  .engine-source .source-visuals figure{height:150px}
