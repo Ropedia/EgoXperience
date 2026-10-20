@@ -215,6 +215,23 @@ body,main{background:#000!important;color:var(--white)}.nav{background:#0b0d12f2
 #model .metrics-head.chapter-intro>.chapter-copy{width:100%;max-width:none;margin:22px 0 0;font-size:19px;line-height:1.6;color:#b3beb8;text-wrap:wrap}
 @media(max-width:800px){.chapter-kicker{margin-bottom:12px}.chapter-kicker:after{font-size:11px}.chapter-intro h2,.chapter-intro .paradigm-title,#model #metrics-title{font-size:34px;letter-spacing:-1.3px}.chapter-copy,#model .metrics-head.chapter-intro>.chapter-copy{width:100%;max-width:none;margin-top:16px;font-size:16px;line-height:1.6}}
 
+/* Portrait phones: the Engine becomes a true document flow, never a clipped desktop canvas. */
+@media(max-width:600px){
+ body{overflow-x:hidden}
+ #engine{overflow:clip}
+ .engine-flow{display:flex!important;flex-direction:column;grid-template:none!important;width:100%;min-width:0;min-height:0;padding:22px 0;gap:18px;overflow:hidden!important;background-size:48px 48px}
+ .engine-flow-wires{display:none}
+ .engine-flow-node,.object-source,.capture-source,.engine-flow-node[data-flow-node="track"],.engine-flow-node[data-flow-node="verify"],.engine-output{grid-area:auto!important;grid-row:auto!important;align-self:stretch!important;width:100%;min-width:0;min-height:0!important;margin:0;transform:none!important}
+ .engine-flow-node{padding:20px 16px}
+ .engine-flow-node h3,.engine-source h3{white-space:normal;font-size:20px;line-height:1.15}
+ .engine-source .source-visuals figure{height:150px}
+ .engine-flow-node[data-flow-node="track"] .track-mini{flex:none;margin:14px 0 0;grid-template-rows:64px 24px 64px 24px 64px;gap:4px}
+ .engine-flow-node[data-flow-node="verify"] .verify-stack{flex:none;margin:14px 0 0;grid-template-rows:64px 28px auto 28px 64px;gap:7px;align-content:start}
+ .engine-flow-node[data-flow-node="verify"] .verify-stack>div{grid-template-rows:auto 42px 42px;min-height:164px}
+ .engine-output .flow-output-list{flex:none;margin:14px 0 0;grid-template-rows:repeat(7,auto);gap:8px;align-content:start}
+ .engine-output .flow-output-list li{min-height:50px;white-space:normal}
+}
+
 /* Restored website-only requests from the accidentally used thread. */
 .resource-cta .resource-btn,.resource-cta .resource-btn.hf-btn{border-color:#c6ff8f75!important}.resource-cta .resource-btn:hover,.resource-cta .resource-btn.hf-btn:hover{border-color:#c6ff8f!important}
 .model-equation.motion-live .model-inputs .model-io-box,.model-equation.motion-live .network-svg line,.model-equation.motion-live .network-svg circle,.model-equation.motion-live .model-outputs .model-io-box{animation-duration:3.6s!important}.model-equation.motion-live .model-inputs .model-io-box:nth-child(3){animation-delay:.12s}.model-equation.motion-live .network-svg line.network-first{animation-delay:.55s}.model-equation.motion-live .network-svg line.network-second{animation-delay:1.12s}.model-equation.motion-live .network-svg circle.network-input{animation-delay:.28s}.model-equation.motion-live .network-svg circle.network-hidden{animation-delay:.9s}.model-equation.motion-live .network-svg circle.network-output{animation-delay:1.55s}.model-equation.motion-live .model-outputs .model-io-box{animation-delay:2s}.model-equation.motion-live .model-outputs .model-io-box:nth-child(3){animation-delay:2.14s}.model-equation.motion-live .model-outputs .model-io-box:nth-child(4){animation-delay:2.28s}.model-equation.motion-live .model-outputs .model-io-box:nth-child(5){animation-delay:2.42s}
